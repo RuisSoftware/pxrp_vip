@@ -18,15 +18,18 @@ AddEventHandler('esx:playerLoaded', function(xPlayer)
 	PlayerLoaded = true
 end)
 
-AddEventHandler('playerSpawned', function()
+AddEventHandler('esx:onPlayerSpawn', function()
 	vip = false
 	ESX.TriggerServerCallback('pxrp_vip:getVIPStatus', function(vip)
 		if vip then
 			while not PlayerLoaded do
+				ESX.ShowNotification("Je Nitro status wordt opgehaald...")
 				Citizen.Wait(1000)
 			end
 
-	ESX.ShowNotification("Status VIP: Activé")
+		ESX.ShowNotification("VIP status: Actief")
+		else
+		ESX.ShowNotification("Als VIP speler heb je meer mogelijkheden. Bezoek onze Discord server voor meer informatie.")
 		end
 	end)
 end)

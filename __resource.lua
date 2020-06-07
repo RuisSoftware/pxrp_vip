@@ -1,8 +1,8 @@
 resource_manifest_version '44febabe-d386-4d18-afbe-5e627f4af937'
 
-description 'PXRP VIP Status'
+description 'VIP Status - Dutch Players Edit'
 
-version '1.0.0'
+version '1.2.0'
 
 server_scripts {
 	'@mysql-async/lib/MySQL.lua',
