@@ -5,6 +5,7 @@ Exemple : Give VIP status to a player that has donated a certain ammount of mone
 
 # HOW TO INSTALL AND USE
 # Simply use the VIP Callback on any part of your code that you want to block for vip users
+Admins only: /addvip & /delvip
 
 
 					ESX.TriggerServerCallback('pxrp_vip:getVIPStatus', function(isVIP)
@@ -17,3 +18,5 @@ Exemple : Give VIP status to a player that has donated a certain ammount of mone
 
 
 Full credits to original creator.
+
+
